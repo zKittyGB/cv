@@ -1,8 +1,16 @@
 import "../../css/home/Header.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Avatar(props) {
   const dispatch = useDispatch();
+  const version = useSelector((state) => state.version);
+  //adate the language of the jobTitle
+  let jobTitle;
+  if (version === "noDevFr") {
+    jobTitle = props.titleFr;
+  } else {
+    jobTitle = props.titleEn;
+  }
   return (
     <div className="header">
       <div className="header_versionButtons">
@@ -35,7 +43,7 @@ export default function Avatar(props) {
         <h1>AXEL HÉBERT</h1>
       </div>
       <div className="header_jobTitle">
-        <h2>{props.props}</h2>
+        <h2>{jobTitle}</h2>
       </div>
     </div>
   );

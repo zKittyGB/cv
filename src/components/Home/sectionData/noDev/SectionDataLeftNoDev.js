@@ -1,4 +1,6 @@
-import "../../../../../css/home/SectionData/noDev/SectionDataLeftNoDev.css";
+import "../../../../css/home/SectionData/noDev/SectionDataLeftNoDev.css";
+import { profilData } from "../../../../utils/data.js";
+
 import {
   purple,
   blue,
@@ -8,27 +10,41 @@ import {
   green,
   red,
   changeColor,
-} from "../../../../../utils/fontColor";
+} from "../../../../utils/fontColor";
+import { useSelector } from "react-redux";
 
 export default function SectionDataLeft() {
+  console.log(profilData);
+  const version = useSelector((state) => state.version);
+  //version FR = 0 version EN = 1
+  let arrayVersion = 0;
+  if (version === "noDevFr") {
+    arrayVersion = 0;
+  }
+  if (version === "noDevEn") {
+    arrayVersion = 1;
+  }
   return (
     <div className="sectionDataLeft">
       <h3 className="bgWhite">
-        {changeColor(blue, "Informations sur le profil")}
+        {changeColor(blue, `${profilData.titleProfilData[arrayVersion]}`)}
         {changeColor(orange, "() {")}
       </h3>
       <p className="margin20px">
         <br />
-        {changeColor(blue, "Données Personnelles")}
+        {changeColor(blue, `${profilData.personalData.title[arrayVersion]}`)}
         {changeColor(purple, "() {")}
         <br />
       </p>
       <p className="margin30px">
-        {changeColor(yellow, "Naissance")}
+        {changeColor(yellow, `${profilData.personalData.birth[arrayVersion]}`)}
         {changeColor(blue, " = ")}
         {changeColor(green, "‘29.06.1990’")}
         <br />
-        {changeColor(yellow, " Permis de conduire")}
+        {changeColor(
+          yellow,
+          `${profilData.personalData.driverLicence[arrayVersion]}`
+        )}
         {changeColor(blue, " = ")}
         {changeColor(blue, "[")}
         {changeColor(green, "‘A’")}
@@ -36,27 +52,33 @@ export default function SectionDataLeft() {
         {changeColor(green, "‘B’")}
         {changeColor(blue, "]")}
         <br />
-        {changeColor(yellow, "Ville")}
+        {changeColor(yellow, `${profilData.personalData.city[arrayVersion]}`)}
         {changeColor(blue, " = ")}
         {changeColor(green, "‘44300 Nantes’")}
         <br />
-        {changeColor(yellow, "Tel ")}
+        {changeColor(yellow, `${profilData.personalData.phone[arrayVersion]}`)}
         {changeColor(blue, " = ")}
         {changeColor(green, "‘06.22.67.91.03’")}
         <br />
         {changeColor(yellow, "E-mail ")}
         {changeColor(blue, " = ")}
-        {changeColor(green, " ‘a.hebert72@gmail.com’ ")}
+        {changeColor(green, " ‘a.hebert72@gmail.com’")}
         <br />
-        {changeColor(yellow, "Disponibilité ")}
+        {changeColor(
+          yellow,
+          `${profilData.personalData.availability[arrayVersion]}`
+        )}
         {changeColor(blue, " = ")}
-        {changeColor(green, " ‘Disponibilité immédiate’ ")}
+        {changeColor(
+          green,
+          `${profilData.personalData.availabilityValue[arrayVersion]}`
+        )}
       </p>
       <p className="margin20px">
         {changeColor(purple, "}")}
         <br />
         <br />
-        {changeColor(blue, "Données de compétences")}
+        {changeColor(blue, `${profilData.skillData.title[arrayVersion]}`)}
         {changeColor(purple, "() {")}
       </p>
       <p className="margin30px">
@@ -75,7 +97,7 @@ export default function SectionDataLeft() {
         {changeColor(green, "‘Redux’")}
         {changeColor(blue, "]")}
         <br />
-        {changeColor(yellow, "Courramment utilisé")}
+        {changeColor(yellow, `${profilData.skillData.usualUse[arrayVersion]}`)}
         {changeColor(blue, " = [")}
         {changeColor(green, "‘Git/Github’")}
         {changeColor(grey, ",")}
@@ -95,23 +117,31 @@ export default function SectionDataLeft() {
         {changeColor(grey, ",")}
         {changeColor(green, "‘Async’")}
         {changeColor(grey, ",")}
-        <br />
-        {changeColor(green, "Axios")}
+        {changeColor(green, "‘Axios’")}
         {changeColor(grey, ",")}
-        {changeColor(green, "‘Test unitaire(jest)’")}
+        {changeColor(
+          green,
+          `${profilData.skillData.notionsTest[arrayVersion]}`
+        )}
         {changeColor(grey, ",")}
-        {changeColor(green, "‘Accessibilité’")}
+        {changeColor(
+          green,
+          `${profilData.skillData.notionsAccess[arrayVersion]}`
+        )}
         {changeColor(blue, "]")}
         <br />
-        {changeColor(yellow, " Langues")}
+        {changeColor(yellow, `${profilData.skillData.languages[arrayVersion]}`)}
         {changeColor(blue, " = {")}
       </p>
       <p className="margin40px">
-        {changeColor(red, "Français:")}
-        {changeColor(green, " ‘Langue maternelle’")}
+        {changeColor(red, `${profilData.skillData.languagesFr[arrayVersion]}`)}
+        {changeColor(
+          green,
+          `${profilData.skillData.languagesFrValue[arrayVersion]}`
+        )}
         {changeColor(grey, ",")}
         <br />
-        {changeColor(red, "Anglais:")}
+        {changeColor(red, `${profilData.skillData.languagesEn[arrayVersion]}`)}
         {changeColor(orange, " [")}
         {changeColor(green, "‘Toeic: B1’")}
         {changeColor(grey, ",")}
@@ -123,11 +153,14 @@ export default function SectionDataLeft() {
         {changeColor(purple, "}")}
         <br />
         <br />
-        {changeColor(blue, "Données des hobbies")}
+        {changeColor(blue, `${profilData.hobbiesData.title[arrayVersion]}`)}
         {changeColor(purple, "() {")}
       </p>
       <p className="margin30px">
-        {changeColor(yellow, " Jeux vidéo")}
+        {changeColor(
+          yellow,
+          `${profilData.hobbiesData.videoGame[arrayVersion]}`
+        )}
         {changeColor(blue, " = [")}
         {changeColor(green, "‘WoW’")}
         {changeColor(grey, ",")}
@@ -138,7 +171,10 @@ export default function SectionDataLeft() {
         {changeColor(green, "‘...’")}
         {changeColor(blue, "]")}
         <br />
-        {changeColor(yellow, "Jeux de plateau")}
+        {changeColor(
+          yellow,
+          `${profilData.hobbiesData.boardGame[arrayVersion]}`
+        )}
         {changeColor(blue, " = [")}
         {changeColor(green, "‘Warhammer’")}
         {changeColor(grey, ",")}
@@ -147,11 +183,11 @@ export default function SectionDataLeft() {
         {changeColor(green, "‘...’")}
         {changeColor(blue, "]")}
         <br />
-        {changeColor(yellow, " Culture")}
+        {changeColor(yellow, `${profilData.hobbiesData.cultur[arrayVersion]}`)}
         {changeColor(blue, " = {")}
       </p>
       <p className="margin40px">
-        {changeColor(red, "Films:")}
+        {changeColor(red, `${profilData.hobbiesData.movie[arrayVersion]}`)}
         {changeColor(orange, " [")}
         {changeColor(green, "‘SF’")}
         {changeColor(grey, ",")}
@@ -165,7 +201,7 @@ export default function SectionDataLeft() {
         {changeColor(orange, "]")}
         {changeColor(grey, ",")}
         <br />
-        {changeColor(red, "Musique:")}
+        {changeColor(red, `${profilData.hobbiesData.music[arrayVersion]}`)}
         {changeColor(orange, " [")}
         {changeColor(green, "‘Rock’")}
         {changeColor(grey, ",")}

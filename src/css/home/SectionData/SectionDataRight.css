@@ -9,19 +9,27 @@
     font-family: 'Consolas';
     font-size: 18px;
     overflow-y:scroll;
-    padding-top: 7px;
+}
+
+.secionDataRight_workSection {
+    overflow-y:scroll;
+    min-height: 60%;
+}
+
+.secionDataRight_workSectionNoDev {
+    overflow-y:scroll;
+    min-height: 68%;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
-.sectionDataRight::-webkit-scrollbar {
+.sectionDataRight::-webkit-scrollbar, .secionDataRight_workSection::-webkit-scrollbar, .secionDataRight_workSectionNoDev::-webkit-scrollbar {
     display: none;
-  }
+}
   
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .sectionDataRight {
+/* Hide scrollbar for IE, Edge and Firefox */
+.sectionDataRight, .secionDataRight_workSection, .secionDataRight_workSectionNoDev {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-  }
-
+}
 
 .margin10px{
     margin: 0;

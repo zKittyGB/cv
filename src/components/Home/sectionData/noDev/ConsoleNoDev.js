@@ -1,19 +1,18 @@
 import "../../../../css/home/Console.css";
-import console from "../../../../assets/console.jpg";
-import arrowBottom from "../../../../assets/arrow_bottom.png";
+import consoleImg from "../../../../assets/console.jpg";
 import arrowRight from "../../../../assets/arrow_right.png";
-
 import {
   whiteConsole,
   blueConsole,
   greenConsole,
-  greyConsole,
   changeColor,
 } from "../../../../utils/fontColor";
-export default function Console() {
+
+export default function Console(props) {
+  const degree = props.props;
   return (
     <div className="console">
-      <img className="console_img" src={console} alt="console" />
+      <img className="console_img" src={consoleImg} alt="console" />
       <p className="margin10px marginTop">
         {changeColor(whiteConsole, "Education datas ")}
         <br />
@@ -27,7 +26,7 @@ export default function Console() {
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"2022 - 2023"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"Level 6 degree"')}
+        {changeColor(greenConsole, `${degree[0]}`)}
         {changeColor(whiteConsole, "]")}
         <br />
         <img className="arrowRight" src={arrowRight} alt="arrowRight" />
@@ -38,7 +37,7 @@ export default function Console() {
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"2013 - 2014"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"Level 5 degree"')}
+        {changeColor(greenConsole, `${degree[1]}`)}
         {changeColor(whiteConsole, "]")}
         <br />
         <img className="arrowRight" src={arrowRight} alt="arrowRight" />
@@ -49,7 +48,7 @@ export default function Console() {
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"2008 - 2009"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"Level 5 degree"')}
+        {changeColor(greenConsole, `${degree[1]}`)}
         {changeColor(whiteConsole, "]")}
         <br />
         <img className="arrowRight" src={arrowRight} alt="arrowRight" />
@@ -60,7 +59,7 @@ export default function Console() {
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"2010"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"Level 4 degree"')}
+        {changeColor(greenConsole, `${degree[2]}`)}
         {changeColor(whiteConsole, "]")}
       </p>
     </div>

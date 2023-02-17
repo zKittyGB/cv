@@ -13,6 +13,10 @@ export default function Avatar(props) {
   }
   return (
     <div className="header">
+      <button className="header_repo_button">
+        <a href="https://github.com/zKittyGB?tab=repositories">Repo Github</a>
+      </button>
+
       <div className="header_versionButtons">
         <button
           className="header_versionButtons_button"

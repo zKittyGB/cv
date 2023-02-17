@@ -31,7 +31,7 @@ export default function SectionDataRight() {
           {changeColor(grey, "//Work experience as cybercentre  animator")}
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",
@@ -43,6 +43,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " cybercenterAnimator")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          {changeColor(blue, " <==Click here")}
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -63,7 +64,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px  cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",
@@ -95,7 +96,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",
@@ -127,7 +128,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",
@@ -159,7 +160,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",

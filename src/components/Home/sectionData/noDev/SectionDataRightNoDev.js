@@ -53,7 +53,7 @@ export default function SectionDataRight() {
           )}
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",
@@ -67,6 +67,10 @@ export default function SectionDataRight() {
           )}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          {changeColor(
+            blue,
+            `${workExperienceData.keyword.click[arrayVersion]}`
+          )}
         </div>
 
         <p className="margin30px">
@@ -98,7 +102,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",
@@ -139,7 +143,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({ type: "setModalOpen", payload: { job: "gameDesign" } });
           }}
@@ -180,7 +184,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({ type: "setModalOpen", payload: { job: "railways" } });
           }}
@@ -223,7 +227,7 @@ export default function SectionDataRight() {
           <br />
         </p>
         <div
-          className="margin20px"
+          className="margin20px cursor"
           onClick={(event) => {
             dispatch({
               type: "setModalOpen",

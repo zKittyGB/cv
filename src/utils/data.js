@@ -5,6 +5,7 @@ export const workExperienceData = {
   ],
   titleEducExp: ["Données de scolarité", "Education datas"],
   keyword: {
+    click: [" <==Cliquez ici", " <==Click here"],
     name: ["nom: ", "name: "],
     location: ["lieu: ", "location: "],
     modal: {

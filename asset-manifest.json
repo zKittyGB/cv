@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/zKittyGB/cv.git/static/css/main.ace39e98.css",
-    "main.js": "/zKittyGB/cv.git/static/js/main.10c7f512.js",
-    "static/media/portrait_moi_avatar.jpg": "/zKittyGB/cv.git/static/media/portrait_moi_avatar.391ee6c6a2fa5a30d900.jpg",
-    "static/media/console.jpg": "/zKittyGB/cv.git/static/media/console.5c4f2003ff2866a3cf5a.jpg",
-    "static/media/archy.png": "/zKittyGB/cv.git/static/media/archy.5373fd34336c03f78f8b.png",
-    "static/media/middleSeparator.jpg": "/zKittyGB/cv.git/static/media/middleSeparator.ed74210b053a924f7e32.jpg",
-    "static/media/closebutton.png": "/zKittyGB/cv.git/static/media/closebutton.e67510427a8b7f24a7bf.png",
-    "static/media/stream.png": "/zKittyGB/cv.git/static/media/stream.1ead43ab63ae724c21bc.png",
-    "index.html": "/zKittyGB/cv.git/index.html",
-    "main.ace39e98.css.map": "/zKittyGB/cv.git/static/css/main.ace39e98.css.map",
-    "main.10c7f512.js.map": "/zKittyGB/cv.git/static/js/main.10c7f512.js.map"
+    "main.css": "static/css/main.ace39e98.css",
+    "main.js": "static/js/main.10c7f512.js",
+    "static/media/portrait_moi_avatar.jpg": "static/media/portrait_moi_avatar.391ee6c6a2fa5a30d900.jpg",
+    "static/media/console.jpg": "static/media/console.5c4f2003ff2866a3cf5a.jpg",
+    "static/media/archy.png": "static/media/archy.5373fd34336c03f78f8b.png",
+    "static/media/middleSeparator.jpg": "static/media/middleSeparator.ed74210b053a924f7e32.jpg",
+    "static/media/closebutton.png": "static/media/closebutton.e67510427a8b7f24a7bf.png",
+    "static/media/stream.png": "static/media/stream.1ead43ab63ae724c21bc.png",
+    "index.html": "cv.git/index.html",
+    "main.ace39e98.css.map": "static/css/main.ace39e98.css.map",
+    "main.10c7f512.js.map": "static/js/main.10c7f512.js.map"
   },
   "entrypoints": [
     "static/css/main.ace39e98.css",

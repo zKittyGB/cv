@@ -27,7 +27,6 @@ export default function WorkDetailsModal() {
   });
   //affichage de la modal
   if (isModalOpen === "yes") {
-    console.log("pwet");
     //adapt the listTask to the language version
     if (arrayVersion === 0) {
       //stock the task list as list

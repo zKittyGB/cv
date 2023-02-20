@@ -14,7 +14,6 @@ import {
 import { useSelector } from "react-redux";
 
 export default function SectionDataLeft() {
-  console.log(profilData);
   const version = useSelector((state) => state.version);
   //version FR = 0 version EN = 1
   let arrayVersion = 0;

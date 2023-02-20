@@ -1,5 +1,4 @@
 {
-  "homepage": "https://zKittyGB.github.io/cv",
   "name": "cv",
   "version": "0.1.5",
   "private": true,
@@ -42,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "compression-webpack-plugin": "^10.0.0"
   }
 }

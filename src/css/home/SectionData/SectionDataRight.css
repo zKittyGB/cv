@@ -20,6 +20,8 @@
     overflow-y:scroll;
     min-height: 68%;
 }
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .sectionDataRight::-webkit-scrollbar, .secionDataRight_workSection::-webkit-scrollbar, .secionDataRight_workSectionNoDev::-webkit-scrollbar {
     display: none;

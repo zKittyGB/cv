@@ -1,5 +1,7 @@
 import "../../../../css/home/SectionData/noDev/SectionDataRightNoDev.css";
 import ConsoleNoDev from "./ConsoleNoDev.js";
+import clic from "../../../../assets/clic.gif";
+
 import {
   purple,
   blue,
@@ -67,10 +69,7 @@ export default function SectionDataRight() {
           )}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          {changeColor(
-            blue,
-            `${workExperienceData.keyword.click[arrayVersion]}`
-          )}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
 
         <p className="margin30px">
@@ -113,6 +112,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, `${workExperienceData.hotlinerOrange.job}`)}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}
@@ -154,8 +154,8 @@ export default function SectionDataRight() {
           )}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
-
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}
           {changeColor(green, `${workExperienceData.gameDesign.name}`)}
@@ -196,8 +196,8 @@ export default function SectionDataRight() {
           )}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
-
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}
           {changeColor(green, `${workExperienceData.railways.name}`)}
@@ -239,8 +239,8 @@ export default function SectionDataRight() {
           {changeColor(yellow, `${workExperienceData.hotlinerCanal.job}`)}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
-
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}
           {changeColor(green, `${workExperienceData.hotlinerCanal.name}`)}

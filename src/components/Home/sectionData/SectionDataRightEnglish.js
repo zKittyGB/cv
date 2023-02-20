@@ -1,5 +1,6 @@
 import "../../../css/home/SectionData/SectionDataRight.css";
 import Console from "./Console.js";
+import clic from "../../../assets/clic.gif";
 import {
   purple,
   blue,
@@ -43,7 +44,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " cybercenterAnimator")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          {changeColor(blue, " <==Click here")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -76,6 +77,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, "hotliner")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -108,6 +110,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " leadProducerGameDesigner")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -140,6 +143,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " setterRailways")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -172,6 +176,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " hotliner")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
+          <img className="clic" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}

@@ -51,5 +51,10 @@
 }
 
 .cursor {
+    height:20px;
+    line-height: 20px;
     cursor: pointer;
+}
+.clic {
+    vertical-align:middle;
 }

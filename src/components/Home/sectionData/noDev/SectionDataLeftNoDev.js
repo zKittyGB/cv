@@ -1,4 +1,4 @@
-import "../../../../css/home/SectionData/noDev/SectionDataLeftNoDev.css";
+import "../../../../css/home/SectionData/SectionDataLeft.css";
 import { profilData } from "../../../../utils/data.js";
 
 import {
@@ -194,7 +194,7 @@ export default function SectionDataLeft() {
         {changeColor(grey, ",")}
         {changeColor(green, "‘Anim’")}
         {changeColor(grey, ",")}
-        {changeColor(green, "‘Horror’")}
+        {changeColor(green, `${profilData.hobbiesData.horror[arrayVersion]}`)}
         {changeColor(grey, ",")}
         {changeColor(green, "...")}
         {changeColor(orange, "]")}

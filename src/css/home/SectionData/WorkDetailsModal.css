@@ -48,10 +48,12 @@
 
 .WorkDetailsModal_details {
     width:89.7%;
-    min-height:75%;
+    min-height:70%;
+    max-height:75%;
     border: 1px solid grey;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-top:none;
     overflow-y: scroll;
 }

@@ -36,7 +36,7 @@ export default function Console() {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"Openclassrooms"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2022 - 2023"')}
+        {changeColor(greenConsole, '"2022-2023"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"Level 6 degree"')}
         {changeColor(whiteConsole, "]")}
@@ -48,7 +48,7 @@ export default function Console() {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"Paul Valery (Montpellier)"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2013 - 2014"')}
+        {changeColor(greenConsole, '"2013-2014"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"Level 5 degree"')}
         {changeColor(whiteConsole, "]")}
@@ -60,7 +60,7 @@ export default function Console() {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"I.U.T de Poitiers (Angoulême)"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2008 - 2009"')}
+        {changeColor(greenConsole, '"2008-2009"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"Level 5 degree"')}
         {changeColor(whiteConsole, "]")}
@@ -72,7 +72,7 @@ export default function Console() {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"Lycée Colbert de Torcy (Sablé)"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2010"')}
+        {changeColor(greenConsole, '"2008"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, '"Level 4 degree"')}
         {changeColor(whiteConsole, "]")}

@@ -1,5 +1,5 @@
 import "../../../../css/home/Console.css";
-import consoleImg from "../../../../assets/console.jpg";
+// import consoleImg from "../../../../assets/console.jpg";
 import arrowRight from "../../../../assets/arrow_right.png";
 import {
   whiteConsole,
@@ -11,8 +11,8 @@ import {
 export default function Console(props) {
   const degree = props.props;
   return (
-    <div className="console">
-      <img className="console_img" src={consoleImg} alt="console" />
+    <div className="consoleNoDev">
+      {/* <img className="console_img" src={consoleImg} alt="console" /> */}
       <p className="margin10px marginTop">
         {changeColor(whiteConsole, "Education datas ")}
         <br />
@@ -24,7 +24,7 @@ export default function Console(props) {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"Openclassrooms"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2022 - 2023"')}
+        {changeColor(greenConsole, '"2022-2023"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, `${degree[0]}`)}
         {changeColor(whiteConsole, "]")}
@@ -35,7 +35,7 @@ export default function Console(props) {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"Paul Valery (Montpellier)"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2013 - 2014"')}
+        {changeColor(greenConsole, '"2013-2014"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, `${degree[1]}`)}
         {changeColor(whiteConsole, "]")}
@@ -46,7 +46,7 @@ export default function Console(props) {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"I.U.T de Poitiers (Angoulême)"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2008 - 2009"')}
+        {changeColor(greenConsole, '"2008-2009"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, `${degree[1]}`)}
         {changeColor(whiteConsole, "]")}
@@ -57,7 +57,7 @@ export default function Console(props) {
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"Lycée Colbert de Torcy (Sablé)"')}
         {changeColor(whiteConsole, ",")}
-        {changeColor(greenConsole, '"2010"')}
+        {changeColor(greenConsole, '"2008"')}
         {changeColor(whiteConsole, ",")}
         {changeColor(greenConsole, `${degree[2]}`)}
         {changeColor(whiteConsole, "]")}

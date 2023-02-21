@@ -1,4 +1,4 @@
-import "../../../../css/home/SectionData/noDev/SectionDataRightNoDev.css";
+import "../../../../css/home/SectionData/SectionDataRight.css";
 import ConsoleNoDev from "./ConsoleNoDev.js";
 import clic from "../../../../assets/clic.gif";
 
@@ -36,7 +36,6 @@ export default function SectionDataRight() {
   } else {
     degreeLevel = ['"Level 6 degree"', '"Level 5 degree"', '"Level 4 degree"'];
   }
-
   return (
     <div className="sectionDataRight">
       <div className="secionDataRight_workSectionNoDev">
@@ -263,8 +262,7 @@ export default function SectionDataRight() {
         <p className="margin10px">{changeColor(orange, "}")}</p>
       </div>
       <br />
-      <br />
-      <br />
+
       <h3 className="bgWhite">
         {changeColor(blue, `${workExperienceData.titleEducExp[arrayVersion]}`)}
         {changeColor(orange, "() {")}

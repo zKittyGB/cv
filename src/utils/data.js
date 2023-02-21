@@ -92,7 +92,7 @@ export const workExperienceData = {
     job: ["Chef de projet - Game Designer", "Lead Produceur - Game Designer"],
     name: "‘Studio Nyx’",
     location: "‘Angoulême 16000’",
-    date: ["‘Mars 2014 - Séptembre 2015’", "‘March 2014 - September 2015’"],
+    date: ["‘Mars 2014 - Septembre 2015’", "‘March 2014 - September 2015’"],
     infos: {
       name: "Studio Nyx",
       job: ["Chef de projet - Game Designer", "Lead producer - Game Designer"],
@@ -222,6 +222,7 @@ export const profilData = {
     boardGame: ["Jeux de plateau", "Board games"],
     cultur: ["Culture", "Cultur"],
     movie: ["Films", "Movies"],
+    horror: ["‘Horreur’", "‘Horror’"],
     music: ["Musique", "Music"],
   },
 };

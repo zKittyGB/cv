@@ -1,7 +1,7 @@
 import { createStore } from "redux";
 
 const initialState = {
-  version: "dev",
+  version: "noDevFr",
   isModalOpen: "no",
   jobClicked: "",
 };

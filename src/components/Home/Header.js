@@ -16,15 +16,14 @@ export default function Avatar(props) {
       <button className="header_repo_button">
         <a href="https://github.com/zKittyGB?tab=repositories">Repo Github</a>
       </button>
-
       <div className="header_versionButtons">
         <button
           className="header_versionButtons_button"
           onClick={(event) => {
-            dispatch({ type: "setVersionDev" });
+            dispatch({ type: "setVersionNoDevFr" });
           }}
         >
-          Dev
+          Fr
         </button>
         <button
           className="header_versionButtons_button"
@@ -37,10 +36,10 @@ export default function Avatar(props) {
         <button
           className="header_versionButtons_button"
           onClick={(event) => {
-            dispatch({ type: "setVersionNoDevFr" });
+            dispatch({ type: "setVersionDev" });
           }}
         >
-          Fr
+          Dev
         </button>
       </div>
       <div className="header_name">

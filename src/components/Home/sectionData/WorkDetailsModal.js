@@ -79,11 +79,15 @@ export default function WorkDetailsModal() {
                 ]
               }
             </h3>
-            <p>
-              {workExperienceData.keyword.modal.tel[arrayVersion]}
-              {work.infos.tel}
-            </p>
-            <p>Mail: {work.infos.mail}</p>
+
+            {work.infos.tel !== "" ? (
+              workExperienceData.keyword.modal.tel[arrayVersion] +
+              work.infos.tel
+            ) : (
+              <div> </div>
+            )}
+            <p></p>
+            {work.infos.mail !== "" ? "Mail: " + work.infos.mail : <div> </div>}
             <p>
               {workExperienceData.keyword.modal.adress[arrayVersion]}
               {work.infos.location}

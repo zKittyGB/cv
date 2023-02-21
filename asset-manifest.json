@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f7f4285.css",
-    "main.js": "/static/js/main.e37bac73.js",
+    "main.css": "/static/css/main.83926469.css",
+    "main.js": "/static/js/main.fd26064d.js",
     "static/media/portrait_moi_avatar.jpg": "/static/media/portrait_moi_avatar.391ee6c6a2fa5a30d900.jpg",
+    "static/media/billed.jpg": "/static/media/billed.816945c8e47cf373c786.jpg",
+    "static/media/ptitsplats.jpg": "/static/media/ptitsplats.ce3559dd0d7e2c15663f.jpg",
+    "static/media/sportsee.jpg": "/static/media/sportsee.3b8d681fcaae1cfda882.jpg",
     "static/media/console.jpg": "/static/media/console.5c4f2003ff2866a3cf5a.jpg",
+    "static/media/argentBank.jpg": "/static/media/argentBank.8f5ae45c58950755651c.jpg",
+    "static/media/fisheye.jpg": "/static/media/fisheye.0ae03bea9482b2a2cb7f.jpg",
+    "static/media/kasa.jpg": "/static/media/kasa.4d7cee418ca38f337238.jpg",
+    "static/media/hrnet.jpg": "/static/media/hrnet.26525cd0e482b695bda8.jpg",
+    "static/media/ohmyfood.jpg": "/static/media/ohmyfood.5a45e76762bce5936768.jpg",
     "static/media/archy.png": "/static/media/archy.5373fd34336c03f78f8b.png",
     "static/media/middleSeparator.jpg": "/static/media/middleSeparator.ed74210b053a924f7e32.jpg",
     "static/media/closebutton.png": "/static/media/closebutton.e67510427a8b7f24a7bf.png",
     "static/media/stream.png": "/static/media/stream.1ead43ab63ae724c21bc.png",
     "index.html": "/index.html",
-    "main.5f7f4285.css.map": "/static/css/main.5f7f4285.css.map",
-    "main.e37bac73.js.map": "/static/js/main.e37bac73.js.map"
+    "main.83926469.css.map": "/static/css/main.83926469.css.map",
+    "main.fd26064d.js.map": "/static/js/main.fd26064d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f7f4285.css",
-    "static/js/main.e37bac73.js"
+    "static/css/main.83926469.css",
+    "static/js/main.fd26064d.js"
   ]
 }

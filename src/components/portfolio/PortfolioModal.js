@@ -10,6 +10,7 @@ export default function PortfolioModal() {
   const version = useSelector((state) => state.version);
   let project;
   let listSkills;
+  let listStart;
   //Get the language version to show
   //version FR = 0 version EN = 1
   let arrayVersion = 0;
@@ -23,12 +24,23 @@ export default function PortfolioModal() {
   Object.keys(portfolioData).forEach((key) => {
     if (key === projectClicked) {
       project = portfolioData[key];
+      if (arrayVersion === 0) {
+        listSkills = project.skillsFr.map((skills) => (
+          <li key={skills.toString()}>{skills}</li>
+        ));
+        listStart = project.startFr.map((startLi) => (
+          <li key={startLi.toString()}>{startLi}</li>
+        ));
+      } else {
+        listSkills = project.skillsEn.map((skills) => (
+          <li key={skills.toString()}>{skills}</li>
+        ));
+        listStart = project.startEn.map((startLi) => (
+          <li key={startLi.toString()}>{startLi}</li>
+        ));
+      }
     }
   });
-  listSkills = project.skills.map((skills) => (
-    <li key={skills.toString()}>{skills}</li>
-  ));
-  console.log(project);
   if (isModalOpen === "yes") {
     return (
       <div className="portfolioModal">
@@ -53,17 +65,27 @@ export default function PortfolioModal() {
             </div>
           </div>
           <div className="portfolioModal_body_section">
+            <h2>Repo: </h2>
+            <a href={project.repo}>
+              {portfolioData.keyword.link[arrayVersion]}frontend
+            </a>
+            <br />
+            {project.repoBack !== "" ? (
+              <a href={project.repoBack}>
+                {portfolioData.keyword.link[arrayVersion]}backend
+              </a>
+            ) : (
+              <div> </div>
+            )}
             <h2>Description: </h2>
             {project.details[arrayVersion]}
             <br />
             <br />
-            <h2>Compétences utilisées: </h2>
+            <h2>{portfolioData.keyword.skills[arrayVersion]} </h2>
             {listSkills}
             <br />
-            <h2>Lancer l'application: </h2>
-            <br />
-            <br />
-            <a href={project.repo}>Liens vers le repo</a>
+            <h2>{portfolioData.keyword.start[arrayVersion]} </h2>
+            <div className="startList">{listStart}</div>
           </div>
         </div>
       </div>

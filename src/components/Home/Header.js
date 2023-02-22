@@ -58,7 +58,11 @@ export default function Avatar(props) {
         <h1>AXEL HÉBERT</h1>
       </div>
       <div className="header_jobTitle">
-        <h2>{jobTitle}</h2>
+        {pageToOpen === "CV" ? (
+          <h2 className="header_jobTitlePortfolio">{jobTitle}</h2>
+        ) : (
+          <h2>{jobTitle}</h2>
+        )}
       </div>
     </div>
   );

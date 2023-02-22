@@ -19,44 +19,40 @@ export default function Portfolio() {
           <div className="card_list">
             <Card
               picture={"hrnet"}
-              title={"Project n°11: HRnet"}
+              title={"Project n°7: HRnet"}
               subjectFR={"Gestionnaire de dossiers d'employés"}
             />
             <Card
               picture={"argentBank"}
-              title={"Project n°10: ArgentBank"}
+              title={"Project n°6: ArgentBank"}
               subjectFR={"Système d'authentification via une API"}
             />
             <Card
               picture={"sportsee"}
-              title={"Project n°9: Sportsee"}
+              title={"Project n°5: Sportsee"}
               subjectFR={"Tableau de bord analytique"}
             />
             <Card
               picture={"kasa"}
-              title={"Project n°8: Kasa"}
+              title={"Project n°4: Kasa"}
               subjectFR={"Site d'annonce de logements immobilier"}
             />
             <Card
-              picture={"billed"}
-              title={"Project n°7: Billed"}
-              subjectFR={"Application web de ressources humaines"}
-            />
-            <Card
               picture={"ptitsplats"}
-              title={"Project n°6: Les petits plats"}
+              title={"Project n°3: Les petits plats"}
               subjectFR={"Site de recettes de cuisine"}
             />
             <Card
               picture={"fisheye"}
-              title={"Project n°5: FishEye"}
+              title={"Project n°2: FishEye"}
               subjectFR={"Catalogue de photographes"}
             />
             <Card
               picture={"ohmyfood"}
-              title={"Project n°4: Ohmyfood"}
+              title={"Project n°1: Ohmyfood"}
               subjectFR={"Répertoire de menus pour restaurant"}
             />
+            <CardEmpty />
             <CardEmpty />
           </div>
         </div>

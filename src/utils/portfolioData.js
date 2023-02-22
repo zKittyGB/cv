@@ -1,7 +1,15 @@
 export const portfolioData = {
   hrnet: {
     title: "Project n°11: HRnet",
-    details: ["création bla bla bla ta soeur", "dzad"],
+    details: [
+      "Ce projet est le dernier projet de mon parcours avec Openclassrooms. Il consistait à transformer une application web faite en full jQuery par une application en full react. De plus, l'une des consignes demandait de convertir l'un des modules en libairie NPM. ",
+      "dzad",
+    ],
+    skills: [
+      "Réalisation d'un design au choix",
+      "Création d'une librairie NPM",
+      "Utilisation de Material UI",
+    ],
     picture: "hrnet",
     repo: "https://github.com/zKittyGB/HRnet",
   },

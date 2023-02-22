@@ -9,6 +9,7 @@ export default function PortfolioModal() {
   const projectClicked = useSelector((state) => state.projectClicked);
   const version = useSelector((state) => state.version);
   let project;
+  let listSkills;
   //Get the language version to show
   //version FR = 0 version EN = 1
   let arrayVersion = 0;
@@ -24,6 +25,9 @@ export default function PortfolioModal() {
       project = portfolioData[key];
     }
   });
+  listSkills = project.skills.map((skills) => (
+    <li key={skills.toString()}>{skills}</li>
+  ));
   console.log(project);
   if (isModalOpen === "yes") {
     return (
@@ -49,7 +53,16 @@ export default function PortfolioModal() {
             </div>
           </div>
           <div className="portfolioModal_body_section">
+            <h2>Description: </h2>
             {project.details[arrayVersion]}
+            <br />
+            <br />
+            <h2>Compétences utilisées: </h2>
+            {listSkills}
+            <br />
+            <h2>Lancer l'application: </h2>
+            <br />
+            <br />
             <a href={project.repo}>Liens vers le repo</a>
           </div>
         </div>

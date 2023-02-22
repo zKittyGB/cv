@@ -188,7 +188,6 @@ export default function SectionDataRight() {
             dispatch({ type: "setModalOpen", payload: { job: "railways" } });
           }}
         >
-          {changeColor(purple, "const ")}
           {changeColor(
             yellow,
             `${workExperienceData.railways.job[arrayVersion]}`
@@ -234,7 +233,6 @@ export default function SectionDataRight() {
             });
           }}
         >
-          {changeColor(purple, "const ")}
           {changeColor(yellow, `${workExperienceData.hotlinerCanal.job}`)}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}

@@ -19,7 +19,15 @@
     align-content: space-between;
     justify-content: space-around;
 }
-.header_repo_button{
+.header_switchCvPortfolio_link{
+    position: absolute;
+    left:10px;
+    width:80px;
+    height: 40px;
+
+}
+
+.header_switchCvPortfolio_button{
     position: absolute;
     left:10px;
     width:80px;
@@ -29,11 +37,11 @@
     box-shadow: 3px 3px 3px black;
     background-color: #c20030;
 }
-.header_repo_button a:link{
+.header_switchCvPortfolio_button a:link{
     text-decoration: none;
     color:black;
 }
-.header_repo_button a:visited{
+.header_switchCvPortfolio_button a:visited{
     text-decoration: none;
     color:black;
 }

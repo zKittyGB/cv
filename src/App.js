@@ -8,8 +8,8 @@ export default function App() {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/CV" element={<Home />} />
         <Route exact path="/portfolio" element={<Portfolio />} />
-        {/* <Route exact path="/employees" element={<Employees />} /> */}
       </Routes>
     </div>
   );

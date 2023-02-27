@@ -30,7 +30,7 @@ export default function Console(props) {
         {changeColor(whiteConsole, "]")}
         <br />
         <img className="arrowRight" src={arrowRight} alt="arrowRight" />
-        {changeColor(blueConsole, "gameDesign")}
+        {changeColor(blueConsole, "Licence pro gameDesign")}
         {changeColor(whiteConsole, ": ")}
         {changeColor(whiteConsole, "[")}
         {changeColor(greenConsole, '"Paul Valery (Montpellier)"')}

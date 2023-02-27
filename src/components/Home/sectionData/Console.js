@@ -42,7 +42,7 @@ export default function Console() {
         {changeColor(whiteConsole, "]")}
         <br />
         <img className="arrowRight" src={arrowRight} alt="arrowRight" />
-        {changeColor(blueConsole, "gameDesign")}
+        {changeColor(blueConsole, "Licence pro gameDesign")}
         {changeColor(whiteConsole, ": ")}
         {changeColor(greyConsole, "(3)")}
         {changeColor(whiteConsole, "[")}

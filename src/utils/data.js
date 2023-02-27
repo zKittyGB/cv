@@ -9,7 +9,7 @@ export const workExperienceData = {
     name: ["nom: ", "name: "],
     location: ["lieu: ", "location: "],
     modal: {
-      usualActivity: ["Mes tâches au quotidien", "My usual tasks"],
+      usualActivity: ["Mes missions au quotidien", "My daily tasks"],
       usefulInformations: ["Informations pratiques", "Useful Informations"],
       tel: ["Tél: ", "Phone: "],
       adress: ["Adresse: ", "Adress: "],
@@ -29,8 +29,8 @@ export const workExperienceData = {
       name: "L'Archy'Made",
       job: ["Animateur en  cybercentre", "Cybercenter animator"],
       description: [
-        "Le Cybercentre du Haut-Anjou, était situé à Champigné. Nous étions un lieu d'accueil ouvert à tous les habitants qui souhaitaient obtenir une initiation aux nouvelles technologies. Il permet d’acquérir des connaissances en informatique par le biais d’ateliers d’initiation. L'association a dût fermer suite aux évènements liés au covid",
-        "The Haut-Anjou Cybercentre was located at Champigné. We were a welcoming place open to all residents who wanted to get an introduction to new technologies. It made it possible to acquire computer knowledge through introductory workshops. The association had to close because of events related to covid",
+        "Le Cybercentre du Haut-Anjou est situé à Champigné. C'est un lieu d'accueil ouvert à tous les habitants qui souhaitaient obtenir une initiation aux nouvelles technologies. L'association a dût fermer suite aux évènements liés au covid",
+        "The Haut-Anjou Cybercentre is located at Champigné. It is a welcoming place open to all residents who wanted to get an introduction to new technologies.",
       ],
       logo: "archy",
       activityFr: [
@@ -57,21 +57,21 @@ export const workExperienceData = {
       "//Work experience as hotliner",
     ],
     job: "Hotliner",
-    name: ["‘Stream(Orange)’"],
+    name: ["‘Convergys(Orange)’"],
     location: "‘Angers 49000’",
     date: ["‘Novembre 2015 - Février 2017’", "‘November 2015 - Febuary 2017’"],
     infos: {
       name: "Stream(Orange)",
       job: ["Hotliner", "Hotliner"],
       description: [
-        "Stream Global Services, était une société BPO acquise par Convergys suite à une fusion définitive, avec plus de 37,000 employés dans 22 pays et 50 centres d'appels. La société est présente en Amérique du Nord, Europe, Asie-pacifique, Amérique Latine, Moyen-Orien et Afrique.",
-        "Stream Global Services, was a BPO company acquired by Convergys through a definitive merger, together with more than 37,000 employees in 22 countries and 50 contact centers. The footprint of the company included countries across North America, Europe, Asia Pacific, Latin America, Middle East and Africa.",
+        "Convergys est une entreprise de central d'appel ayant plus de 37,000 employés dans 22 pays et 50 centres d'appels.",
+        "Convergys is an call center business with more than 37,000 employees in 22 countries and 50 contact centers.",
       ],
       logo: "stream",
       activityFr: [
         "Accueil téléphonique",
-        "Diagnostiquer un problème technique",
-        "Apporter la solution la plus adéquat",
+        "Diagnostics de problèmes techniques",
+        "Apport des solutions adéquat",
       ],
       activityEn: [
         "Telephone reception",
@@ -134,8 +134,8 @@ export const workExperienceData = {
       name: "CLMTP",
       job: ["Poseur de voie ferrée", "setter Railways"],
       description: [
-        "Fondée en 1994 par Zéphir CLAISSE, le nom de l’entreprise CLMTP se marie avec passion et rigueur dans le domaine des travaux de voie ferrée. La vocation et le savoir-faire de quatre générations et de collaborateurs ont permis à la société CLMTP de se positionner comme une référence dans le milieu ferroviaire. ",
-        "Founded in 1994 by Zéphir CLAISSE, the name of the CLMTP company is combined with passion and rigor in the field of railway works. The vocation and know-how of four generations and employees have enabled the CLMTP company to to position itself as a reference in the railway environment. ",
+        "CLMTP est une entreprise dans le domaine des travaux de voie ferrée. La vocation et le savoir-faire de quatre générations et de collaborateurs ont permis à la société CLMTP de se positionner comme une référence dans le milieu ferroviaire. ",
+        "CLMTP is a railway business. The vocation and know-how of four generations and employees have enabled the CLMTP company to to position itself as a reference in the railway environment.",
       ],
       logo: "clmtp",
       activityFr: [
@@ -160,24 +160,24 @@ export const workExperienceData = {
       "//Work experience as hotliner",
     ],
     job: ["Hotliner"],
-    name: ["‘Stream(Canal+)’"],
+    name: ["‘Convergys(Canal+)’"],
     location: "‘Angers 49000’",
     date: [
       "‘Septembre 2010 - Février 2011’",
       "‘September 2010 - Febuary 2011’",
     ],
     infos: {
-      name: "Stream(Canal+)",
+      name: "Convergys(Canal+)",
       job: ["Hotliner", "Hotliner"],
       description: [
-        "Stream Global Services, était une société BPO acquise par Convergys suite à une fusion définitive, avec plus de 37,000 employés dans 22 pays et 50 centres d'appels. La société est présente en Amérique du Nord, Europe, Asie-pacifique, Amérique Latine, Moyen-Orien et Afrique.",
-        "Stream Global Services, was a BPO company acquired by Convergys through a definitive merger, together with more than 37,000 employees in 22 countries and 50 contact centers. The footprint of the company included countries across North America, Europe, Asia Pacific, Latin America, Middle East and Africa.",
+        "Convergys est une entreprise de centres d'appels ayant plus de 37,000 employés dans 22 pays et 50 centres.",
+        "Convergys is an call center business with more than 37,000 employees in 22 countries and 50 centers.",
       ],
       logo: "stream",
       activityFr: [
         "Accueil téléphonique",
-        "Diagnostiquer un problème technique",
-        "Apporter la solution la plus adéquat",
+        "Diagnostics de problèmes techniques",
+        "Apport des solutions adéquat",
       ],
       activityEn: [
         "Telephone reception",
@@ -207,7 +207,7 @@ export const profilData = {
     ],
   },
   skillData: {
-    title: ["Données de Compétences", "Skills Datas"],
+    title: ["Compétences techniques", "Skills Datas"],
     usualUse: ["Courrament utilisé", "Usual Use"],
     notionsTest: ["‘Test unitaire(jest)", "‘Unit test(jest)’"],
     notionsAccess: ["‘Accessibilité’", "‘Accessibility’"],
@@ -217,7 +217,7 @@ export const profilData = {
     languagesEn: ["Anglais: ", "English: "],
   },
   hobbiesData: {
-    title: ["Données des Hobbies", "Hobbies Datas"],
+    title: ["Hobbies", "Hobbies Datas"],
     videoGame: ["Jeux vidéo", "Video games"],
     boardGame: ["Jeux de plateau", "Board games"],
     cultur: ["Culture", "Cultur"],

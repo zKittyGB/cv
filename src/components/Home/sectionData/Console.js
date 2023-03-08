@@ -14,7 +14,7 @@ export default function Console() {
   return (
     <div className="console">
       <img className="console_img" src={console} alt="console" />
-      <p className="margin10px marginTop">
+      <p className="margin10px marginTop console_dev_title">
         {changeColor(whiteConsole, "Education datas ")}
         <br />
         <img className="arrowBottom" src={arrowBottom} alt="arrowBottom" />
@@ -42,7 +42,7 @@ export default function Console() {
         {changeColor(whiteConsole, "]")}
         <br />
         <img className="arrowRight" src={arrowRight} alt="arrowRight" />
-        {changeColor(blueConsole, "Licence pro gameDesign")}
+        {changeColor(blueConsole, "LicenceProGameDesign")}
         {changeColor(whiteConsole, ": ")}
         {changeColor(greyConsole, "(3)")}
         {changeColor(whiteConsole, "[")}

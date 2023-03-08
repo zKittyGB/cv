@@ -92,3 +92,32 @@ font-size: 15px;
 .startList {
     list-style: none;
 }
+
+@media (max-width: 500px) { 
+    .portfolioModal_body {
+        width: 80%;
+    }
+    .portfolioModal_body_header_title  {
+        width: 100%;
+    }
+    .portfolioModal_body_header {
+        max-height:50px;
+        min-height:50px;
+    }
+
+    .portfolioModal_body_header_title h1 {
+        font-size: 20px;
+    }
+    .portfolioModal_picture {
+        display: none;
+    }
+    .portfolioModal_body_section {
+        min-height: 90%;
+    }
+}
+@media (max-height: 900px)  and (orientation: landscape){ 
+    .portfolioModal_body {
+        width: 80%;
+    }
+
+}

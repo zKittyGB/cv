@@ -58,3 +58,31 @@
 .clic {
     vertical-align:middle;
 }
+
+@media (max-width: 1099px) { 
+    p{
+        font-size: 14px;
+    }
+    .bodyCV_data_section {
+        flex-direction: column;
+        overflow: scroll;
+    }
+    
+    .bodyCV_data_section::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .bodyCV_data_section {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+
+    .bodyCV_data_section_separator {
+        display: none;
+    }
+    .clic {
+        width:80px;
+    }
+}

@@ -44,3 +44,36 @@
 .marginTop {
     margin-top:10px;
   }
+
+  
+@media (max-width: 1099px) { 
+
+    .consoleNoDev {
+        margin-top: -40px;
+        max-height: 100px;
+        overflow: hidden;
+    }
+    .console {
+        max-height: 240px;
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width: 500px) { 
+    .console {
+        max-height: 295px;
+        min-height: 295px;
+    }
+    .consoleNoDev {
+        max-height: 170px;
+        min-height: 170px;
+    }
+}
+
+@media (max-height: 900px)  and (orientation: landscape){ 
+    .consoleNoDev {
+        max-height: 110px;
+        min-height: 110px;
+    }
+}

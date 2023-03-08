@@ -19,12 +19,12 @@
     align-content: space-between;
     justify-content: space-around;
 }
+
 .header_switchCvPortfolio_link{
     position: absolute;
     left:10px;
     width:80px;
     height: 40px;
-
 }
 
 .header_switchCvPortfolio_button{
@@ -37,10 +37,12 @@
     box-shadow: 3px 3px 3px black;
     background-color: #c20030;
 }
+
 .header_switchCvPortfolio_button a:link{
     text-decoration: none;
     color:black;
 }
+
 .header_switchCvPortfolio_button a:visited{
     text-decoration: none;
     color:black;
@@ -89,4 +91,98 @@
 
 .header_jobTitlePortfolio {
     padding-top: 8px;
+}
+
+@media (max-height: 700px) { 
+    .header {
+        min-height:107px;    
+    }
+
+    .header_name {
+        border:2px solid black;
+    }
+
+    .header_name h1 {
+        font-size: 30px;
+    }
+
+    .header_jobTitle {
+        margin-top: 90px;
+    }
+
+    .header_jobTitle h2 {
+        font-size: 12px;
+    }
+
+    .header_switchCvPortfolio_link{
+        position: absolute;
+        left:5px;
+        width:60px;
+        height: 20px;
+    }
+
+    .header_switchCvPortfolio_button {
+        width:60px;
+        height: 20px;
+        left:0;
+    }
+    .header_versionButtons {
+       height: 100px; 
+    }
+
+    .header_versionButtons_button {
+        width:35px;
+        height: 25px;
+    }   
+}
+
+@media (max-width: 500px) { 
+    .header {
+        min-height:107px;    
+    }
+
+    .header_name {
+        border:2px solid black;
+    }
+
+    .header_name h1 {
+        font-size: 30px;
+    }
+
+    .header_jobTitle {
+        width:200px;
+        margin-top: 95px;
+    }
+
+    .header_jobTitle h2 {
+        font-size: 12px;
+    }
+
+    .header_switchCvPortfolio_link{
+        position: absolute;
+        left:5px;
+        top:2px;
+        width:60px;
+        height: 20px;
+    }
+
+    .header_switchCvPortfolio_button {
+        width:60px;
+        height: 20px;
+        left:0;
+    }
+    .header_versionButtons {
+        padding-right: 5px;
+        height: 100px; 
+        top:1px;
+        flex-direction: row;
+        width:100px;
+    }
+    button{
+        font-size: 12px;
+    }
+    .header_versionButtons_button {
+        width:30px;
+        height: 23px;
+    }   
 }

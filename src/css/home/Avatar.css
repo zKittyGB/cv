@@ -6,3 +6,10 @@
 .avatarArea_img {
     height:99.5%;
 }
+
+
+@media (max-width: 1003px) { 
+    .avatarArea {
+        display: none;
+    }
+}

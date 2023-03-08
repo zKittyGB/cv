@@ -17,7 +17,7 @@ export default function SectionDataRight() {
   const dispatch = useDispatch();
 
   return (
-    <div className="sectionDataRight">
+    <div className="sectionDataRightDev">
       <div className="secionDataRight_workSection">
         <p className="bgWhite_right">
           {changeColor(grey, "//User’s work experiences datas")}
@@ -44,7 +44,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " cybercenterAnimator")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic " src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -77,7 +77,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, "hotliner")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -110,7 +110,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " leadProducerGameDesigner")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -143,7 +143,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " setterRailways")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -176,7 +176,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, " hotliner")}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, "name: ")}
@@ -193,8 +193,8 @@ export default function SectionDataRight() {
         <p className="margin20px">{changeColor(purple, "}")}</p>
         <p className="margin10px">{changeColor(orange, "}")}</p>
       </div>
-      <p className="margin10px">
-        <br />
+      <p className="margin10px educationDatas">
+        <br className="brToDelete" />
         {changeColor(grey, "//Get education datas")}
         <br />
         {changeColor(blue, "educationData")}

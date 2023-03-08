@@ -94,3 +94,93 @@
     text-decoration: none;
     color:white;
 }
+
+@media (max-width: 500px) { 
+    .WorkDetailsModal{
+        z-index: 3;
+        width: 100%;
+        height:90%;
+        margin-left:0;
+        position:fixed
+    }
+    .WorkDetailsModal_header_name{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-items: space-between;
+    }
+    .WorkDetailsModal_closeButton {
+        right:5px;
+    }
+    .workDetailsModal_header_businessPicture{
+        display: none;
+    }
+    .WorkDetailsModal h1{
+        font-size: 22px;
+    }
+    .WorkDetailsModal h2{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-height: 900px) and (orientation: landscape) { 
+    .WorkDetailsModal {
+        z-index: 3;
+        width: 100%;
+        margin-left:0;
+        position:fixed
+    }
+    .WorkDetailsModal_header {
+        max-height: 100px;
+        min-height: 100px;
+    }
+    .WorkDetailsModal_header_name {
+        width:100%;
+        height: 80px;
+    }
+    .WorkDetailsModal_header_name h1{
+        font-size: 20px;
+    }
+    .WorkDetailsModal_header_name h2{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .workDetailsModal_header_businessPicture {
+        display: none;
+    }
+    .WorkDetailsModal_details {
+        flex-direction: row;
+        margin-top: -19px;
+        max-height: 200px;
+        min-height: 200px;
+        border:none;
+    }
+    .workDetailsModal_details_resume {
+        width:33%;
+        border-right: 0.5px rgba(172, 172, 172, 0.747) solid;
+        border-left: 0.5px rgba(172, 172, 172, 0.747) solid;
+        border-bottom: 0.5px rgba(172, 172, 172, 0.747) solid;
+        max-height: 80%;
+        overflow-y: scroll;
+    }
+    .workDetailsModal_details_activity {
+        margin-top: 0;
+        width:33%;
+        border-right: 0.5px rgba(172, 172, 172, 0.747) solid;
+        border-bottom: 0.5px rgba(172, 172, 172, 0.747) solid;
+        max-height: 80%;
+        overflow-y: scroll;
+    }
+    .workDetailsModal_details_practiceInfo {
+        margin-top: 0;
+        margin-right: 0px;
+        width:33%;
+        border-right: 0.5px rgba(172, 172, 172, 0.747) solid;
+        border-bottom: 0.5px rgba(172, 172, 172, 0.747) solid;
+        max-height: 80%;
+        padding-right: 0;
+        overflow-y: scroll;
+
+    }
+}

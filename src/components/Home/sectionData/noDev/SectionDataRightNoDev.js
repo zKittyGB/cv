@@ -111,7 +111,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, `${workExperienceData.hotlinerOrange.job}`)}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}
@@ -153,7 +153,7 @@ export default function SectionDataRight() {
           )}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}
@@ -194,7 +194,7 @@ export default function SectionDataRight() {
           )}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}
@@ -236,7 +236,7 @@ export default function SectionDataRight() {
           {changeColor(yellow, `${workExperienceData.hotlinerCanal.job}`)}
           {changeColor(blue, " = ")}
           {changeColor(purple, "{")}
-          <img className="clic" src={clic} alt="clic_gif" />
+          <img className="clic clicHide" src={clic} alt="clic_gif" />
         </div>
         <p className="margin30px">
           {changeColor(red, `${workExperienceData.keyword.name[arrayVersion]}`)}

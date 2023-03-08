@@ -1,5 +1,5 @@
 
-.sectionDataRight {
+.sectionDataRight, .sectionDataRightDev {
     z-index: 1;
     background-color: #23272e;
     width: 50%;
@@ -24,12 +24,12 @@
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.sectionDataRight::-webkit-scrollbar, .secionDataRight_workSection::-webkit-scrollbar, .secionDataRight_workSectionNoDev::-webkit-scrollbar {
+.sectionDataRight::-webkit-scrollbar, .sectionDataRightDev::-webkit-scrollbar, .secionDataRight_workSection::-webkit-scrollbar, .secionDataRight_workSectionNoDev::-webkit-scrollbar {
     display: none;
 }
   
 /* Hide scrollbar for IE, Edge and Firefox */
-.sectionDataRight, .secionDataRight_workSection, .secionDataRight_workSectionNoDev {
+.sectionDataRight, .sectionDataRightDev, .secionDataRight_workSection, .secionDataRight_workSectionNoDev {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
@@ -56,4 +56,55 @@
     margin:0;
     margin-bottom: 1px;
     margin-left: 40px;
+}
+
+@media (max-width: 1099px) { 
+    .sectionDataRight, .sectionDataRightDev {
+        width: 100%;
+        min-height:1000px;
+    }
+    .secionDataRight_workSection {
+        min-height: 750px;
+    }
+    .sectionDataRight .bgWhite {
+        margin-top:-50px;
+    }
+    div {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 500px) { 
+    .sectionDataRightDev {
+        min-height:980px;
+    }
+    .sectionDataRightDev .secionDataRight_workSection {
+        min-height: 620px;
+        max-height: 620px;
+    }
+
+    .sectionDataRight {
+        min-height:890px;
+    }
+
+    .clicHide {
+        display:none;
+    }
+}
+
+@media (max-height: 900px)  and (orientation: landscape){ 
+    .sectionDataRightDev {
+        min-height:890px;
+        overflow: hidden;
+    }
+    .sectionDataRightDev .secionDataRight_workSection {
+        min-height: 620px;
+        max-height: 620px;
+    }
+    .sectionDataRight {
+        width:100%;
+        min-height:830px;
+        overflow: hidden;
+    }
 }

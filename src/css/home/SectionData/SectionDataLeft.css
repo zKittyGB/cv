@@ -54,3 +54,31 @@
     margin-bottom: 1px;
     margin-left: 40px;
 }
+
+@media (max-width: 1099px) { 
+    .bgWhite_right, .bgWhite{
+        font-size: 14px;
+    }
+    .sectionDataLeft {
+        width:100%;
+        min-height:720px;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) { 
+    .sectionDataLeft {
+        width:100%;
+        min-height:655px;
+        overflow: hidden;
+    }
+}
+
+@media (max-height: 900px) and (orientation: landscape) { 
+    .sectionDataLeft {
+        width:100%;
+        min-height:570px;
+        overflow: hidden;
+    }
+}

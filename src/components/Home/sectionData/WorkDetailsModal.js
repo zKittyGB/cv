@@ -40,38 +40,39 @@ export default function WorkDetailsModal() {
     }
     return (
       <div className="WorkDetailsModal">
-        {/* fermeture de la modal */}
-        <img
-          className="WorkDetailsModal_closeButton"
-          src={closeButton}
-          alt="closeButton"
-          onClick={(event) => {
-            dispatch({ type: "setModalClose" });
-          }}
-        />
-        <div className="WorkDetailsModal_header">
-          <div className="WorkDetailsModal_header_name">
-            <h1>{work.infos.name}</h1>
-            <h2>{work.infos.job[arrayVersion]}</h2>
-          </div>
+        <div className="WorkDetailsModal_body">
+          {/* fermeture de la modal */}
           <img
-            className="workDetailsModal_header_businessPicture"
-            src={require(`../../../assets/logo/${work.infos.logo}.png`)}
-            alt="business_picture"
+            className="WorkDetailsModal_closeButton"
+            src={closeButton}
+            alt="closeButton"
+            onClick={(event) => {
+              dispatch({ type: "setModalClose" });
+            }}
           />
-        </div>
-        <div className="WorkDetailsModal_details">
-          <div className="workDetailsModal_details_resume">
+          <div className="WorkDetailsModal_header">
+            <div className="WorkDetailsModal_header_name">
+              <h1>{work.infos.name}</h1>
+              <h2>{work.infos.job[arrayVersion]}</h2>
+            </div>
+            <div className="WorkDetailsModal_picture">
+              <img
+                className="workDetailsModal_header_businessPicture"
+                src={require(`../../../assets/logo/${work.infos.logo}.png`)}
+                alt="business_picture"
+              />
+            </div>
+          </div>
+          <div className="WorkDetailsModal_details">
+            <br />
             <h3>Informations</h3>
             <p>{work.infos.description[arrayVersion]}</p>
-          </div>
-          <div className="workDetailsModal_details_activity">
+            <br />
             <h3>
               {workExperienceData.keyword.modal.usualActivity[arrayVersion]}
             </h3>
             <ul>{listTask}</ul>
-          </div>
-          <div className="workDetailsModal_details_practiceInfo">
+            <br />
             <h3>
               {
                 workExperienceData.keyword.modal.usefulInformations[

@@ -1,61 +1,74 @@
 .WorkDetailsModal{
-    margin-left: -12px;
-    padding-top: 10px;
-    position: absolute;
-    width: 50%;
+    z-index: 3;
+    position:absolute;
+    width: 100%;
     height: 100%;
-    background-color:#23272e;
-    color:white;
-    display: flex;
-    flex-direction: column;
+    background-color: #23272ecb;
+    display:flex;
+    justify-content: center;
     align-items: center;
-    font-family: 'Consolas';
 }
-
-
+.WorkDetailsModal_body {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    max-height: 80%;
+    background-color: #202124;
+    border: 2px solid black;
+    color:white;
+}
 
 .WorkDetailsModal_closeButton {
     position: absolute;
-    right:20px;
+    right:-15px;
+    top:-15px;
     width:40px;
 }
 
-.WorkDetailsModal_header{
-    width:90%;
-    height: 120px;
+.WorkDetailsModal_header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
+    width:100%;
+    max-width: 100%;
+    min-height:20%;
+    max-height: 20%;
+    border-bottom: 2px solid black;
 }
 
 .WorkDetailsModal_header_name {
-    border:1px solid grey;
-    height:100%;
-    width:80%;
-    margin:0;
-    padding:0;
-    padding-left:10px;
+    min-width: 70%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: left;
+}
+.WorkDetailsModal_header_name h1{
+    font-size: 24px;
+}
+
+.WorkDetailsModal_header_name h2{
+    font-size: 20px;
+}
+
+.WorkDetailsModal_picture {
+    max-width: 30%;
 }
 
 .workDetailsModal_header_businessPicture {
-    width:160px;
-    object-fit: cover;
-    border:1px solid grey;
-    border-left: none;
+    width:100%;
     height: 100%;
+    object-fit:cover;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
 }
-
 .WorkDetailsModal_details {
-    width:89.7%;
-    min-height:70%;
-    max-height:75%;
-    border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-top:none;
+    margin-left: 10px;
+    width:80%;
+    height: 79%;
+    max-height: 79%;
     overflow-y: scroll;
+    font-size: 14px;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .WorkDetailsModal_details::-webkit-scrollbar {
@@ -68,119 +81,58 @@
     scrollbar-width: none;  /* Firefox */
 }
 
-.workDetailsModal_details_resume {
-    padding-left:10px;
-    padding-right:10px;
-}
-.workDetailsModal_details_activity{
-    margin-top:10px;
-    margin-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
-}
-
-.workDetailsModal_details_practiceInfo{
-    width: 100%;
-    padding-left:10px;
-    padding-right:10px;
-}
-
-.workDetailsModal_details_practiceInfo a:link{
+.WorkDetailsModal_details a:link{
     text-decoration: none;
     color:white;
 }
 
-.workDetailsModal_details_practiceInfo a:visited{
+.WorkDetailsModal_details a:visited{
     text-decoration: none;
     color:white;
 }
 
 @media (max-width: 500px) { 
-    .WorkDetailsModal{
-        z-index: 3;
-        width: 100%;
-        height:90%;
-        margin-left:0;
-        position:fixed
+    .WorkDetailsModal_body {
+        width: 80%;
+        position: fixed;
     }
-    .WorkDetailsModal_header_name{
-        width:100%;
-        display:flex;
-        flex-direction: column;
-        justify-items: space-between;
-    }
-    .WorkDetailsModal_closeButton {
-        right:5px;
-    }
-    .workDetailsModal_header_businessPicture{
-        display: none;
-    }
-    .WorkDetailsModal h1{
-        font-size: 22px;
-    }
-    .WorkDetailsModal h2{
-        font-size: 20px;
-    }
-}
-
-
-@media (max-height: 900px) and (orientation: landscape) { 
-    .WorkDetailsModal {
-        z-index: 3;
-        width: 100%;
-        margin-left:0;
-        position:fixed
+    .WorkDetailsModal_header_name  {
+        min-width: 100%;
     }
     .WorkDetailsModal_header {
-        max-height: 100px;
-        min-height: 100px;
+        max-height:70px;
+        min-height:70px;
     }
-    .WorkDetailsModal_header_name {
-        width:100%;
-        height: 80px;
+
+    .WorkDetailsModal_header_name h1 {
+        font-size: 16px;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    .WorkDetailsModal_header_name h1{
-        font-size: 20px;
+    .WorkDetailsModal_header_name h2 {
+        font-size: 14px;
+        margin:0;
     }
-    .WorkDetailsModal_header_name h2{
-        font-size: 18px;
-        margin-bottom: 0;
-    }
-    .workDetailsModal_header_businessPicture {
+    .WorkDetailsModal_picture {
         display: none;
     }
-    .WorkDetailsModal_details {
-        flex-direction: row;
-        margin-top: -19px;
-        max-height: 200px;
-        min-height: 200px;
-        border:none;
-    }
-    .workDetailsModal_details_resume {
-        width:33%;
-        border-right: 0.5px rgba(172, 172, 172, 0.747) solid;
-        border-left: 0.5px rgba(172, 172, 172, 0.747) solid;
-        border-bottom: 0.5px rgba(172, 172, 172, 0.747) solid;
-        max-height: 80%;
-        overflow-y: scroll;
-    }
-    .workDetailsModal_details_activity {
-        margin-top: 0;
-        width:33%;
-        border-right: 0.5px rgba(172, 172, 172, 0.747) solid;
-        border-bottom: 0.5px rgba(172, 172, 172, 0.747) solid;
-        max-height: 80%;
-        overflow-y: scroll;
-    }
-    .workDetailsModal_details_practiceInfo {
-        margin-top: 0;
-        margin-right: 0px;
-        width:33%;
-        border-right: 0.5px rgba(172, 172, 172, 0.747) solid;
-        border-bottom: 0.5px rgba(172, 172, 172, 0.747) solid;
-        max-height: 80%;
-        padding-right: 0;
-        overflow-y: scroll;
+}
+@media (max-height: 900px)  and (orientation: landscape){ 
+    .WorkDetailsModal_body {
+        width: 80%;
+        max-height: 100%;
+        position: fixed;
+        z-index: 4;
 
+    }
+
+
+    .WorkDetailsModal_header_name h1 {
+        display: none;
+    }
+    .WorkDetailsModal_header_name h2 {
+        font-size: 16px;
+        margin-top:10px;
     }
 }
